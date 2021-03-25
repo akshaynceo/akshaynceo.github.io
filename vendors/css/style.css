@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "gilroyBold";
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "gilroyReg";
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "gilroyMedium";
+  src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "gilroyHeavy";
+  src: url("../fonts/Gilroy-Heavy.ttf");
+}
+
+@font-face {
+  font-family: "gilroyLight";
+  src: url("../fonts/Gilroy-Light.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-navbar {
+  background-color: white !important;
+}
+
+.custom-navbar .contact .msg a {
+  display: block;
+  position: relative;
+  margin-left: 70px;
+  -webkit-transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  font-family: "gilroyBold";
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+}
+
+.custom-navbar .contact .msg a::before {
+  position: absolute;
+  top: 8px;
+  left: -60px;
+  content: url("../images/message.svg");
+  z-index: 1;
+  -webkit-transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.custom-navbar .contact .msg a::after {
+  position: absolute;
+  top: -5px;
+  left: -73px;
+  content: " ";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #DCDEE0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.custom-navbar .contact .msg a:hover::before {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.custom-navbar .contact .msg a:hover::after {
+  border: 2px solid transparent;
+  background-color: #121315;
+}
+
+.custom-navbar .custom-nav li a {
+  font-family: "gilroyBold";
+  color: #000 !important;
+  position: relative;
+}
+
+.custom-navbar .custom-nav li a::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  -webkit-transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.custom-navbar .custom-nav li a:hover::before {
+  border: 1px solid #123123;
+}
+
+.main-wrapper {
+  margin-top: 30px;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  text-align: center;
+}
+
+.main-wrapper .main-wrap {
+  padding: 60px 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.main-wrapper .main-wrap .main-items .pro-img {
+  margin: 10px 0;
+}
+
+.main-wrapper .main-wrap .main-items .hi {
+  margin: 10px 0;
+}
+
+.main-wrapper .main-wrap .main-items .hi h5 {
+  font-family: "gilroyMedium";
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  color: #0A0A0A;
+  margin: 0;
+}
+
+.main-wrapper .main-wrap .main-items .hi h5 img {
+  -webkit-animation: wave 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+          animation: wave 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translateY(-2px) rotate(0deg);
+            transform: translateY(-2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-4px) rotate(20deg);
+            transform: translateY(-4px) rotate(20deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translateY(-2px) rotate(0deg);
+            transform: translateY(-2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-4px) rotate(20deg);
+            transform: translateY(-4px) rotate(20deg);
+  }
+}
+
+.main-wrapper .main-wrap .main-items .title {
+  margin: 10px 0;
+}
+
+.main-wrapper .main-wrap .main-items .title h2 {
+  font-family: "gilroyBold";
+  font-weight: 800;
+  font-size: 72px;
+  color: #0D0E10;
+  margin: 0;
+}
+
+.main-wrapper .main-wrap .main-items .para {
+  margin: 10px 0;
+}
+
+.main-wrapper .main-wrap .main-items .para p {
+  margin: 0;
+  font-family: "gilroyBold";
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #121315;
+}
+
+.main-wrapper .main-wrap .main-items .contact-btn {
+  margin: 30px 0 10px 0;
+}
+
+.main-wrapper .main-wrap .main-items .contact-btn a {
+  background: #000000;
+  border-radius: 38px;
+  font-family: "gilroyBold";
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 22px 38px;
+  text-decoration: none;
+  -webkit-transition: .3s box-shadow ease-in-out;
+  transition: .3s box-shadow ease-in-out;
+}
+
+.main-wrapper .main-wrap .main-items .contact-btn a:hover {
+  -webkit-box-shadow: 0px 35px 35px -20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 35px 35px -20px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1920px) {
+  .main-wrapper .main-wrap {
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .msg {
+    margin-top: 4px;
+  }
+  .main-wrapper .main-wrap .main-items .title h2 {
+    font-size: 56px;
+  }
+  .main-wrapper .main-wrap .main-items .para p {
+    font-size: 18px;
+  }
+  .main-wrapper .main-wrap {
+    padding: 60px 0;
+    display: -ms-grid;
+    display: block;
+    height: auto;
+    place-items: normal;
+  }
+  .custom-navbar .custom-nav li a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .custom-navbar .custom-nav li a::before {
+    right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-wrapper .main-wrap .main-items .title h2 {
+    font-size: 44px;
+  }
+  .main-wrapper .main-wrap .main-items .para p {
+    font-size: 16px;
+  }
+  .custom-navbar .contact .msg a {
+    margin-left: 60px;
+    font-size: 20px;
+  }
+  .custom-navbar .contact .msg a::after {
+    left: -63px;
+  }
+  .custom-navbar .contact .msg a::before {
+    left: -50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
